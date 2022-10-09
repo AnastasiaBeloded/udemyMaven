@@ -17,9 +17,10 @@ public class CommonAction {
     public static WebDriver createDriver(){
         if(driver==null){
             switch (PLATFORM_AND_BROWSER) {
-                case "WinChrome":
+                case "winChrome":
                     System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                     driver = new ChromeDriver();
+                    break;
                 default:
                     Assert.fail("Incorrect platform or browser name:"+PLATFORM_AND_BROWSER);
             }

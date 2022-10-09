@@ -33,4 +33,32 @@ public class Test {
        //WebElement input = driver.findElement(By.cssSelector());
 
     }
+
+    /*protected void switchWindow(){
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+
+            String window1 = driver.getWindowHandle();
+
+            js.executeScript("window.open()");
+
+            Set<String> currentWindows = driver.getWindowHandles();
+
+            String window2=null;
+
+            for (String window:currentWindows) {
+                if(!window.equals(window1)){
+                    window2 = window;
+                    break;
+                }
+
+            }
+            driver.switchTo().window(window2);
+
+        }*/
+        /*protected void switchWindow(){
+            Alert alert =wait.until(ExpectedConditions.alertIsPresent());
+            driver.switchTo().alert();
+            alert.accept();
+        }*/
 }
