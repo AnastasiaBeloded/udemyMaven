@@ -43,6 +43,9 @@
                         <version>1.6.2</version>
                     </dependency>
                 </dependencies>
+                <configuration>
+                    <suiteXmlFiles>./testng.xml</suiteXmlFiles>
+                </configuration>
             </plugin>
         </plugins>
     </build>
